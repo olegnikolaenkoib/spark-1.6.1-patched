@@ -1,0 +1,2 @@
+
+mvn package -P production -Pyarn -Phadoop-2.6 -Dhadoop.version=2.7.2 -Dscala-2.11 -T 1C -DskipTests org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy -DaltReleaseDeploymentRepository=central::default::http://172.28.5.15:8081/content/repositories/releases/ -Durl=http://172.28.5.15:8081/content/repositories/releases/ javadoc:javadoc javadoc:aggregate
